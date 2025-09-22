@@ -18,7 +18,7 @@ if (!$songId || !$title || !$artist) {
 
 function fetchSongDetails($songId)
 {
-    $apiKey = "OGY502KwO5C7WGd72u7ngZBETuqf1wrs9QFZtp0ghGmb3vADuI3TEHDxuFMJCVcu";
+    $apiKey = "API_KEY";
     $apiUrl = "https://api.genius.com/songs/" . $songId;
 
     $ch = curl_init();
