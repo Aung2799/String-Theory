@@ -5,7 +5,7 @@ include 'navbar.php';
 
 function fetchSongsByArtist($artist, $limit = 20)
 {
-    $apiKey = "OGY502KwO5C7WGd72u7ngZBETuqf1wrs9QFZtp0ghGmb3vADuI3TEHDxuFMJCVcu";
+    $apiKey = "API_KEY";
     $songs = [];
     $page = 1;
     $collected = 0;
