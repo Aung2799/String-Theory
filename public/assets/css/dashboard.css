@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dashboard-container h1 {
+    font-size: 32px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.dashboard-container p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.admin-actions {
+    margin-bottom: 30px;
+}
+
+.admin-actions a {
+    margin: 0 10px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.admin-actions a:hover {
+    background-color: #555;
+}
+
+.song-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2e2e2e;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.song-table th,
+.song-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.song-table th {
+    background-color: #444;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.song-table tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+.song-table tr:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+
+.song-table td a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.song-table td a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #181818;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 280px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 16px;
+    background-color: gold;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #222;
+}
+
+.search-container button:hover {
+    background-color: #e6b800;
+}
+
+#artistList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#artistList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+    margin: 6px 0;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#artistList li:hover {
+    background-color: #555;
+}
+
+#artistList li a {
+    color: #ffcc00;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    flex: 1;
+}
+
+#artistList li a:hover {
+    color: #ffd633;
+}
+
+.artist-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ellipsis for long artist names */
+#artistList li a span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 250px;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background: white;
+    color: black;
+}
+
+body.light-mode .container {
+    background: white;
+    color: black;
+}
+
+body.light-mode .song-title,
+body.light-mode .artist-name {
+    color: black;
+}
+
+body.light-mode .song-item,
+body.light-mode .artist-item,
+body.light-mode #artistList li {
+    background-color: #eee;
+}
+
+body.light-mode .song-item:hover,
+body.light-mode .artist-item:hover,
+body.light-mode #artistList li:hover {
+    background-color: #ddd;
+}
+
+body.light-mode #artistList li a {
+    color: black;
+}
+
+body.light-mode #artistList li a:hover {
+    color: #333;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode .logo,
+body.light-mode .song-title,
+body.light-mode .tagline,
+body.light-mode .section h2,
+body.light-mode .cta-button,
+body.light-mode .feature-box i,
+body.light-mode .feature-box h3,
+body.light-mode #artistList li a {
+    color: black !important;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .search-container button {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    #artistList li {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    #artistList li a {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    #artistList li a span {
+        max-width: 100%;
+    }
+}

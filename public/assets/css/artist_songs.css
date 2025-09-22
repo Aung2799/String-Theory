@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #181818;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.song-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.song-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.song-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.song-title {
+    color: #FFD700;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.favorite-btn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    padding: 0;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.load-more a {
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.load-more a:hover {
+    text-decoration: underline;
+}
+
+body.light-mode {
+    background: white;
+    color: black;
+}
+
+body.light-mode .container {
+    background: white;
+    color: black;
+}
+
+body.light-mode .song-title,
+body.light-mode .artist-name {
+    color: black;
+}
+
+body.light-mode .song-item,
+body.light-mode .artist-item {
+    background-color: #eee;
+}
+
+body.light-mode .song-item:hover,
+body.light-mode .artist-item:hover {
+    background-color: #ddd;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode .logo,
+body.light-mode .song-title,
+body.light-mode .tagline,
+body.light-mode .section h2,
+body.light-mode .cta-button,
+body.light-mode .feature-box i,
+body.light-mode .feature-box h3,
+body.light-mode #artistList li a {
+    color: black !important;
+}

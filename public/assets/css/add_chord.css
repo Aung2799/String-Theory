@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #111);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    background-color: #222;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 600px;
+}
+
+.container h1 {
+    color: #FFD700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    color: #ddd;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form textarea {
+    height: 180px;
+    line-height: 1.6;
+    font-family: monospace;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 30px;
+    background-color: #FFD700;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+.container a {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    form textarea {
+        height: 150px;
+    }
+}
