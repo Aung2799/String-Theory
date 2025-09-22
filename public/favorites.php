@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 $user_id = $_SESSION['user_id'];
-$apiKey = "OGY502KwO5C7WGd72u7ngZBETuqf1wrs9QFZtp0ghGmb3vADuI3TEHDxuFMJCVcu";
+$apiKey = "API_KEY";
 
 $sql = "SELECT f.id AS favorite_id, f.song_type, f.genius_song_api_id, f.local_song_id,
         s.title AS local_title, s.artist AS local_artist, s.album_art
