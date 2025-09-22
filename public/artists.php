@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 // Function to fetch popular artists from the Genius API (first page only)
 function fetchPopularArtists()
 {
-    $apiKey = "OGY502KwO5C7WGd72u7ngZBETuqf1wrs9QFZtp0ghGmb3vADuI3TEHDxuFMJCVcu";
+    $apiKey = "API_KEY";
     $apiUrl = "https://api.genius.com/search?q=guitar&per_page=30";
 
     $ch = curl_init();
