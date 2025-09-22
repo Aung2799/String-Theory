@@ -16,7 +16,7 @@ function getTopSongsByArtist($artistName, $max = 2, $cacheDuration = 86400)
         return json_decode(file_get_contents($cacheFile), true);
     }
 
-    $apiKey = "OGY502KwO5C7WGd72u7ngZBETuqf1wrs9QFZtp0ghGmb3vADuI3TEHDxuFMJCVcu";
+    $apiKey = "API_KEY";
     $url = "https://api.genius.com/search?q=" . urlencode($artistName);
 
     $ch = curl_init();
